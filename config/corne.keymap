@@ -19,11 +19,11 @@
     };
 
     macros {
-        arrowfunction: new_macro {
+        arrowfunction: arrowfunction {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp LS(PERIOD)>;
-            label = "NEW_MACRO";
+            bindings = <&kp EQUAL &kp GT>;
+            label = "ARROWFUNCTION";
         };
     };
 
@@ -74,7 +74,7 @@
             display-name = "Base";
             bindings = <
 &kp SEMI   &kp Q  &kp W            &kp F                &kp P              &kp B            &kp J                   &kp L          &kp U                 &kp Y             &kp SINGLE_QUOTE   &arrowfunction
-&kp ENTER  &kp A  &hrm LEFT_GUI R  &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &kp G            &kp M                   &hrm RSHIFT N  &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I  &tapdance O MINUS  &kp SQT
+&kp ENTER  &kp A  &hrm LEFT_GUI R  &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &kp G            &kp M                   &hrm RSHIFT N  &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I  &tapdance MINUS O  &kp SQT
 &kp LSHFT  &kp Z  &kp X            &kp C                &kp D              &kp V            &kp K                   &kp H          &kp COMMA             &kp DOT           &kp FSLH           &kp ESC
                                    &mo 2                &kp TAB            &kp BACKSPACE    &spaceandlayer 1 SPACE  &kp ENTER      &none
             >;
@@ -82,10 +82,10 @@
 
         numsandnav {
             bindings = <
-&outage  &trans  &kp HOME  &kp UP_ARROW  &kp END          &trans    &trans  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp COLON
-&trans   &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0     &trans
-&trans   &trans  &trans    &trans        &trans           &trans    &trans  &kp N1  &kp N2  &kp N3  &trans     &trans
-                           &trans        &trans           &trans    &trans  &trans  &trans
+&trans  &trans  &kp HOME  &kp UP_ARROW  &kp END          &trans                  &trans                 &kp N7  &kp N8  &kp N9  &kp MINUS  &kp COLON
+&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &kp N0     &trans
+&trans  &trans  &trans    &trans        &trans           &trans                  &trans                 &kp N1  &kp N2  &kp N3  &trans     &trans
+                          &trans        &trans           &trans                  &trans                 &trans  &trans
             >;
         };
 
