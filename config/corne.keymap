@@ -25,6 +25,13 @@
             bindings = <&kp EQUAL &kp GT>;
             label = "ARROWFUNCTION";
         };
+
+        pwd: pwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(P) &kp AT &kp DLLR &kp DLLR &kp W &kp N0 &kp R &kp D &kp EXCL &kp AT &kp POUND &kp DLLR>;
+            label = "PWD";
+        };
     };
 
     behaviors {
@@ -75,16 +82,16 @@
 
             display-name = "Base";
             bindings = <
-&kp SEMI   &hrm LA(LS(LC(T))) Q     &kp W            &kp F                &kp P              &kp B                           &kp J                          &kp L          &kp U                 &kp Y             &kp SINGLE_QUOTE   &arrowfunction
-&kp ENTER  &hrm LS(LC(LEFT_ALT)) A  &hrm LEFT_GUI R  &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N  &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I  &tapdance MINUS O  &kp SQT
+&kp SEMI   &hrm LA(LS(LC(T))) Q     &kp W            &kp F                &kp P              &kp B                           &kp J                          &kp L          &kp U                 &kp Y             &kp SINGLE_QUOTE   &kp BACKSPACE
+&kp ENTER  &hrm LS(LC(LEFT_ALT)) A  &hrm LEFT_GUI R  &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N  &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I  &tapdance MINUS O  &arrowfunction
 &kp LSHFT  &kp Z                    &kp X            &tapdance LC(C) C    &tapdance LC(D) D  &kp V                           &kp K                          &kp H          &kp COMMA             &kp DOT           &kp FSLH           &kp ESC
-                                                     &mo 2                &kp TAB            &kp BACKSPACE                   &spaceandlayer 1 SPACE         &kp ENTER      &none
+                                                     &kp TAB              &kp ENTER          &kp BACKSPACE                   &spaceandlayer 1 SPACE         &kp TAB        &mo 2
             >;
         };
 
         numsandnav {
             bindings = <
-&trans  &trans  &kp HOME  &kp UP_ARROW  &kp END          &trans                  &trans                 &kp N7  &kp N8  &kp N9  &kp MINUS  &kp COLON
+&pwd    &trans  &kp HOME  &kp UP_ARROW  &kp END          &trans                  &trans                 &kp N7  &kp N8  &kp N9  &kp MINUS  &kp COLON
 &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &kp N0     &trans
 &trans  &trans  &trans    &trans        &trans           &trans                  &trans                 &kp N1  &kp N2  &kp N3  &trans     &trans
                           &trans        &sk LEFT_SHIFT   &trans                  &trans                 &trans  &trans
