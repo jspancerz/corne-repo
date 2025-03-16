@@ -36,6 +36,11 @@
             bindings = <&kp TAB>;
             key-positions = <38 37>;
         };
+
+        entercombo {
+            bindings = <&kp ENTER>;
+            key-positions = <39 40>;
+        };
     };
 
     macros {
@@ -65,6 +70,13 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
             label = "TRIPLEGRAVE";
+        };
+
+        ccapw: ccapw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp J &kp E &kp F &kp F &kp P &kp A &kp N &kp C &kp E &kp R &kp Z &kp AT &kp EXCL &kp POUND &kp DLLR &kp N1>;
+            label = "CCAPW";
         };
     };
 
@@ -125,7 +137,7 @@
 
         numsandnav {
             bindings = <
-&pwd    &trans              &kp HOME  &kp UP_ARROW     &kp END            &trans                 &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COLON  &kp GRAVE
+&pwd    &ccapw              &kp HOME  &kp UP_ARROW     &kp END            &trans                 &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COLON  &kp GRAVE
 &trans  &kp LS(LEFT_ARROW)  &kp LEFT  &kp DOWN         &kp RIGHT_ARROW    &kp LS(RIGHT_ARROW)    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0     &kp MINUS
 &trans  &trans              &trans    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans                 &trans     &kp N1  &kp N2  &kp N3  &trans     &trans
                                       &trans           &sk LEFT_SHIFT     &trans                 &trans     &trans  &trans
