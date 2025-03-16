@@ -128,9 +128,9 @@
 
             display-name = "Base";
             bindings = <
-&tapdance GRAVE ESC        &hrm LA(LS(LC(T))) Q  &tapdance HOME W       &kp F                &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L                    &kp U                 &kp Y                  &kp EQUAL          &kp DELETE
-&hrm LA(LC(LSHIFT)) ENTER  &hrm SEMI A           &hrm LEFT_GUI R        &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N            &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I       &tapdance MINUS O  &kp SINGLE_QUOTE
-&kp TAB                    &kp Z                 &tapdance AMPERSAND X  &tapdance LC(C) C    &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance EXCLAMATION H  &tapdance AT COMMA    &tapdance HASH PERIOD  &kp FSLH           &kp BACKSLASH
+&tapdance GRAVE ESC        &hrm LA(LS(LC(T))) Q  &tapdance HOME W       &kp F                &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L                    &kp U                 &kp Y                  &kp EQUAL                 &kp DELETE
+&hrm LA(LC(LSHIFT)) ENTER  &hrm SEMI A           &hrm LEFT_GUI R        &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N            &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I       &tapdance MINUS O         &kp SINGLE_QUOTE
+&kp TAB                    &kp Z                 &tapdance AMPERSAND X  &tapdance LC(C) C    &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance EXCLAMATION H  &tapdance AT COMMA    &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
                                                                         &kp LEFT_ARROW       &kp RIGHT_ARROW    &kp BACKSPACE                   &spaceandlayer 1 SPACE         &kp DOWN_ARROW           &kp UP_ARROW
             >;
         };
