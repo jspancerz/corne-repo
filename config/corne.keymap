@@ -43,7 +43,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             require-prior-idle-ms = <0>;
         };
 
@@ -66,14 +66,14 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        HomeLayer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -82,23 +82,23 @@
 
             display-name = "Base";
             bindings = <
-&kp SEMI   &hrm LA(LS(LC(T))) Q     &kp W            &kp F                &kp P              &kp B                           &kp J                          &kp L          &kp U                 &kp Y             &kp SINGLE_QUOTE   &kp BACKSPACE
-&kp ENTER  &hrm LS(LC(LEFT_ALT)) A  &hrm LEFT_GUI R  &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N  &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I  &tapdance MINUS O  &arrowfunction
-&kp LSHFT  &kp Z                    &kp X            &tapdance LC(C) C    &tapdance LC(D) D  &kp V                           &kp K                          &kp H          &kp COMMA             &kp DOT           &kp FSLH           &kp ESC
-                                                     &kp TAB              &kp ENTER          &kp BACKSPACE                   &spaceandlayer 1 SPACE         &kp TAB        &mo 2
+&kp BACKSPACE               &hrm LA(LS(LC(T))) Q  &tapdance HOME W  &kp F                &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L          &kp U                 &kp Y             &none              &kp ESCAPE
+&hrm LA(LC(LSHIFT)) RETURN  &hrm SEMI A           &hrm LEFT_GUI R   &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N  &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I  &tapdance MINUS O  &kp SINGLE_QUOTE
+&none                       &kp Z                 &tapdance AT A    &tapdance LC(C) C    &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance K RIGHT_BRACKET      &kp H          &kp COMMA             &kp DOT           &kp FSLH           &kp BACKSLASH
+                                                                    &none                &kp TAB            &kp BACKSPACE                   &spaceandlayer 1 SPACE         &kp ENTER      &mo 2
             >;
         };
 
         numsandnav {
             bindings = <
-&pwd    &trans  &kp HOME  &kp UP_ARROW  &kp END          &trans                  &trans                 &kp N7  &kp N8  &kp N9  &kp MINUS  &kp COLON
-&trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N4  &kp N5  &kp N6  &kp N0     &trans
-&trans  &trans  &trans    &trans        &trans           &trans                  &trans                 &kp N1  &kp N2  &kp N3  &trans     &trans
-                          &trans        &sk LEFT_SHIFT   &trans                  &trans                 &trans  &trans
+&pwd    &trans              &kp HOME  &kp UP_ARROW     &kp END            &trans                 &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COLON  &kp GRAVE
+&trans  &kp LS(LEFT_ARROW)  &kp LEFT  &kp DOWN         &kp RIGHT_ARROW    &kp LS(RIGHT_ARROW)    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0     &kp MINUS
+&trans  &trans              &trans    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans                 &trans     &kp N1  &kp N2  &kp N3  &trans     &trans
+                                      &trans           &sk LEFT_SHIFT     &trans                 &trans     &trans  &trans
             >;
         };
 
-        lower_layer {
+        BTLayer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
