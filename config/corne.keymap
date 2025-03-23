@@ -128,19 +128,19 @@
 
             display-name = "Base";
             bindings = <
-&tapdance GRAVE ESC        &hrm LA(LS(LC(T))) Q  &tapdance HOME W       &kp F                &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L                    &kp U                 &kp Y                  &kp EQUAL                 &kp DELETE
-&hrm LA(LC(LSHIFT)) ENTER  &hrm SEMI A           &hrm LEFT_GUI R        &hrm LEFT_CONTROL S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N            &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I       &tapdance MINUS O         &kp SINGLE_QUOTE
-&kp TAB                    &kp Z                 &tapdance AMPERSAND X  &tapdance LC(C) C    &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance EXCLAMATION H  &tapdance AT COMMA    &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
-                                                                        &kp LEFT_ARROW       &kp RIGHT_ARROW    &kp BACKSPACE                   &spaceandlayer 1 SPACE         &kp DOWN_ARROW           &kp UP_ARROW
+&tapdance GRAVE ESC        &hrm LA(LS(LC(T))) Q  &tapdance HOME W       &tapdance LC(F) F          &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L                    &kp U                 &kp Y                  &kp EQUAL                 &kp DELETE
+&hrm LA(LC(LSHIFT)) ENTER  &hrm SEMI A           &hrm LEFT_GUI R        &hrm LEFT_CONTROL S        &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N            &hrm RIGHT_CONTROL E  &hrm RIGHT_GUI I       &tapdance MINUS O         &kp SINGLE_QUOTE
+&kp TAB                    &kp Z                 &tapdance AMPERSAND X  &tapdance LC(C) C          &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance EXCLAMATION H  &tapdance AT COMMA    &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
+                                                                        &tapdance LEFT_ALT DELETE  &kp TAB            &kp BACKSPACE                   &spaceandlayer 1 SPACE         &kp ENTER                &mo 2
             >;
         };
 
         numsandnav {
             bindings = <
-&pwd    &ccapw              &kp HOME  &kp UP_ARROW     &kp END            &trans                 &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COLON  &kp GRAVE
-&trans  &kp LS(LEFT_ARROW)  &kp LEFT  &kp DOWN         &kp RIGHT_ARROW    &kp LS(RIGHT_ARROW)    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0     &kp MINUS
-&trans  &trans              &trans    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans                 &trans     &kp N1  &kp N2  &kp N3  &trans     &trans
-                                      &trans           &sk LEFT_SHIFT     &trans                 &trans     &trans  &trans
+&pwd    &ccapw              &kp HOME  &kp UP_ARROW       &kp END          &trans                 &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COLON  &kp GRAVE
+&trans  &kp LS(LEFT_ARROW)  &kp LEFT  &kp DOWN           &kp RIGHT_ARROW  &kp LS(RIGHT_ARROW)    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0     &kp MINUS
+&trans  &trans              &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans                 &trans     &kp N1  &kp N2  &kp N3  &trans     &trans
+                                      &trans             &sk LEFT_SHIFT   &trans                 &trans     &trans  &trans
             >;
         };
 
@@ -153,10 +153,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
+&none       &none         &none         &none         &none         &none           &none  &none   &none  &none  &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none   &none  &none  &none  &none
+&none       &none         &none         &none         &none         &none           &none  &none   &none  &none  &none  &none
+                                        &none         &trans        &none           &none  &trans  &none
             >;
         };
     };
