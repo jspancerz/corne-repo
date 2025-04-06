@@ -37,6 +37,11 @@
             key-positions = <20 21>;
             layers = <0>;
         };
+
+        triggerpingandPaste {
+            bindings = <&pingandPaste>;
+            key-positions = <4 16>;
+        };
     };
 
     macros {
@@ -80,6 +85,13 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp SPACE &kp LEFT_BRACKET &kp SPACE &kp RIGHT_BRACKET &kp SPACE>;
             label = "MARKDOWNCHECKBOX";
+        };
+
+        pingandPaste: pingandPaste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp P &kp I &kp N &kp G &kp SPACE &kp LC(V) &kp SPACE &kp MINUS &kp T &kp ENTER>;
+            label = "PINGANDPASTE";
         };
     };
 
