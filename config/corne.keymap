@@ -17,27 +17,6 @@
             key-positions = <16 19>;
         };
 
-        arrw {
-            bindings = <&arrowfunction>;
-            key-positions = <14 15>;
-        };
-
-        parens {
-            bindings = <&parenpair>;
-            key-positions = <17 18>;
-        };
-
-        TGrave {
-            bindings = <&triplegrave>;
-            key-positions = <0 1>;
-        };
-
-        createcheckboxcombo {
-            bindings = <&Markdowncheckbox>;
-            key-positions = <20 21>;
-            layers = <0>;
-        };
-
         pingandpatecombo {
             bindings = <&pingandPaste>;
             key-positions = <4 5>;
@@ -57,13 +36,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(P) &kp AT &kp DLLR &kp DLLR &kp W &kp N0 &kp R &kp D &kp EXCL &kp AT &kp POUND &kp DLLR>;
             label = "PWD";
-        };
-
-        parenpair: parenpair {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
-            label = "PARENPAIR";
         };
 
         triplegrave: triplegrave {
