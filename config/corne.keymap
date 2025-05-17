@@ -21,6 +21,17 @@
             bindings = <&pingandPaste>;
             key-positions = <4 5>;
         };
+
+        cls {
+            bindings = <&CLS_Enter>;
+            key-positions = <3 4 5>;
+            layers = <0>;
+        };
+
+        mkdwnchkbox {
+            bindings = <&Markdowncheckbox>;
+            key-positions = <40 37>;
+        };
     };
 
     macros {
@@ -64,6 +75,13 @@
             #binding-cells = <0>;
             bindings = <&kp P &kp I &kp N &kp G &kp SPACE &kp LC(V) &kp SPACE &kp MINUS &kp T &kp ENTER>;
             label = "PINGANDPASTE";
+        };
+
+        CLS_Enter: CLS_Enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp L &kp S &kp SPACE &kp RET>;
+            label = "CLS_ENTER";
         };
     };
 
@@ -115,10 +133,10 @@
 
             display-name = "Base";
             bindings = <
-&kp DELETE              &kp Q  &tapdance HOME W  &tapdance LC(F) F  &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L           &kp U                      &kp Y                  &kp MINUS                 &kp EQUAL
-&kp SEMICOLON           &kp A  &kp R             &kp S              &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N   &kp E                      &kp I                  &kp O                     &kp SINGLE_QUOTE
-&tapdance ESCAPE GRAVE  &kp Z  &kp X             &tapdance LC(C) C  &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance AT H  &tapdance AMPERSAND COMMA  &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
-                                                 &hrm LEFT_WIN TAB  &hrm LCTRL ENTER   &kp BACKSPACE                   &spaceandlayer 1 SPACE         &hrm RCTRL TAB  &hrm RWIN ENTER
+&kp DELETE              &kp Q  &tapdance HOME W  &tapdance LC(F) F   &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L           &kp U                      &kp Y                  &kp MINUS                 &kp EQUAL
+&kp SEMICOLON           &kp A  &kp R             &spaceandlayer 1 S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N   &spaceandlayer 1 E         &kp I                  &kp O                     &kp SINGLE_QUOTE
+&tapdance ESCAPE GRAVE  &kp Z  &kp X             &tapdance LC(C) C   &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance AT H  &tapdance AMPERSAND COMMA  &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
+                                                 &hrm LEFT_WIN TAB   &hrm LCTRL ENTER   &kp BACKSPACE                   &spaceandlayer 1 SPACE         &hrm RCTRL TAB  &hrm RWIN ENTER
             >;
         };
 
@@ -127,7 +145,7 @@
 &pwd    &ccapw              &kp HOME  &kp UP_ARROW       &kp END          &trans                 &kp ASTRK  &kp N7  &kp N8  &kp N9  &kp COLON  &kp GRAVE
 &trans  &kp LS(LEFT_ARROW)  &kp LEFT  &kp DOWN           &kp RIGHT_ARROW  &kp LS(RIGHT_ARROW)    &kp PLUS   &kp N4  &kp N5  &kp N6  &kp N0     &kp MINUS
 &trans  &trans              &trans    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans                 &trans     &kp N1  &kp N2  &kp N3  &trans     &trans
-                                      &trans             &arrowfunction   &trans                 &trans     &trans  &trans
+                                      &trans             &arrowfunction   &trans                 &trans     &mo 2   &trans
             >;
         };
 
