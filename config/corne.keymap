@@ -28,9 +28,11 @@
             layers = <0>;
         };
 
-        mkdwnchkbox {
-            bindings = <&Markdowncheckbox>;
-            key-positions = <40 37>;
+        btlosl {
+            bindings = <&sl 2>;
+            key-positions = <15 16 19 20>;
+            layers = <2>;
+            timeout-ms = <100>;
         };
     };
 
@@ -45,7 +47,7 @@
         pwd: pwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(P) &kp AT &kp DLLR &kp DLLR &kp W &kp N0 &kp R &kp D &kp EXCL &kp AT &kp POUND &kp DLLR>;
+            bindings = <&kp LS(P) &kp AT &kp DLLR &kp DLLR &kp W &kp N0 &kp R &kp D &kp EXCL &kp AT &kp POUND &kp AMPERSAND>;
             label = "PWD";
         };
 
@@ -61,13 +63,6 @@
             #binding-cells = <0>;
             bindings = <&none &kp J &kp E &kp F &kp F &kp P &kp A &kp N &kp C &kp E &kp R &kp Z &kp AT &kp EXCL &kp POUND &kp DLLR &kp N1>;
             label = "CCAPW";
-        };
-
-        Markdowncheckbox: Markdowncheckbox {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp SPACE &kp LEFT_BRACKET &kp SPACE &kp RIGHT_BRACKET &kp SPACE>;
-            label = "MARKDOWNCHECKBOX";
         };
 
         pingandPaste: pingandPaste {
@@ -93,7 +88,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <170>;
             flavor = "tap-preferred";
             require-prior-idle-ms = <0>;
         };
@@ -116,7 +111,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <170>;
             flavor = "tap-preferred";
         };
     };
