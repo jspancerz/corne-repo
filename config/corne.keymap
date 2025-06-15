@@ -28,13 +28,6 @@
             layers = <0>;
         };
 
-        btlosl {
-            bindings = <&sl 2>;
-            key-positions = <15 16 19 20>;
-            layers = <2>;
-            timeout-ms = <100>;
-        };
-
         jumptoend {
             bindings = <&kp END>;
             key-positions = <3 4>;
@@ -48,6 +41,11 @@
         arrowfuncactive {
             bindings = <&arrowfunction>;
             key-positions = <38 39>;
+        };
+
+        ACTIVATelyayrebt {
+            bindings = <&mo 2>;
+            key-positions = <19 20 21 22>;
         };
     };
 
