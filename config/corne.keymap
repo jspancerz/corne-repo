@@ -34,6 +34,21 @@
             layers = <2>;
             timeout-ms = <100>;
         };
+
+        jumptoend {
+            bindings = <&kp END>;
+            key-positions = <3 4>;
+        };
+
+        gohome {
+            bindings = <&kp HOME>;
+            key-positions = <2 3>;
+        };
+
+        arrowfuncactive {
+            bindings = <&arrowfunction>;
+            key-positions = <38 39>;
+        };
     };
 
     macros {
@@ -128,10 +143,10 @@
 
             display-name = "Base";
             bindings = <
-&kp DELETE              &kp Q  &tapdance HOME W  &tapdance LC(F) F   &tapdance END P    &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L           &kp U                      &kp Y                  &kp MINUS                 &kp EQUAL
-&kp SEMICOLON           &kp A  &kp R             &spaceandlayer 1 S  &hrm LEFT_SHIFT T  &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N   &spaceandlayer 1 E         &kp I                  &kp O                     &kp SINGLE_QUOTE
-&tapdance ESCAPE GRAVE  &kp Z  &kp X             &tapdance LC(C) C   &tapdance LC(V) D  &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance AT H  &tapdance AMPERSAND COMMA  &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
-                                                 &hrm LEFT_WIN TAB   &hrm LCTRL ENTER   &kp BACKSPACE                   &spaceandlayer 1 SPACE         &hrm RCTRL TAB  &hrm RWIN ENTER
+&kp DELETE              &tapdance UP_ARROW Q  &tapdance DOWN_ARROW W  &tapdance LC(LEFT_ARROW) F  &tapdance RIGHT_ARROW P  &tapdance LEFT_BRACE B          &tapdance RIGHT_BRACE J        &kp L           &kp U                      &kp Y                  &kp MINUS                 &kp EQUAL
+&kp SEMICOLON           &kp A                 &kp R                   &spaceandlayer 1 S          &hrm LEFT_SHIFT T        &tapdance LEFT_PARENTHESIS G    &tapdance RIGHT_PARENTHESIS M  &hrm RSHIFT N   &spaceandlayer 1 E         &kp I                  &kp O                     &kp SINGLE_QUOTE
+&tapdance ESCAPE GRAVE  &kp Z                 &kp X                   &tapdance LC(C) C           &tapdance LC(V) D        &tapdance LEFT_BRACKET V        &tapdance RIGHT_BRACKET K      &tapdance AT H  &tapdance AMPERSAND COMMA  &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
+                                                                      &hrm LEFT_WIN TAB           &hrm LCTRL ENTER         &kp BACKSPACE                   &spaceandlayer 1 SPACE         &hrm RCTRL TAB  &hrm RWIN ENTER
             >;
         };
 
