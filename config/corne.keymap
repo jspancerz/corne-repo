@@ -141,7 +141,7 @@
 
             display-name = "Base";
             bindings = <
-&kp DELETE              &kp Q  &kp R  &tapdance UP_ARROW F  &tapdance DOWN_ARROW P  &tapdance DOWN_ARROW B          &tapdance UP_ARROW J           &kp L           &kp U                      &kp Y                  &kp MINUS                 &kp EQUAL
+&kp DELETE              &kp Q  &kp W  &tapdance UP_ARROW F  &tapdance DOWN_ARROW P  &tapdance HOME B                &tapdance END J                &kp L           &kp U                      &kp Y                  &kp MINUS                 &kp EQUAL
 &kp SEMICOLON           &kp A  &kp R  &spaceandlayer 1 S    &hrm LEFT_SHIFT T       &tapdance LEFT_ARROW G          &tapdance RIGHT_ARROW M        &hrm RSHIFT N   &kp E                      &kp I                  &kp O                     &kp SINGLE_QUOTE
 &tapdance ESCAPE GRAVE  &kp Z  &kp X  &tapdance LC(C) C     &tapdance LC(V) D       &tapdance LEFT_PARENTHESIS V    &tapdance RIGHT_PARENTHESIS K  &tapdance AT H  &tapdance AMPERSAND COMMA  &tapdance HASH PERIOD  &tapdance QUESTION SLASH  &kp BACKSLASH
                                       &hrm LEFT_WIN TAB     &hrm LCTRL ENTER        &kp BACKSPACE                   &spaceandlayer 1 SPACE         &hrm RCTRL TAB  &hrm RWIN ENTER
